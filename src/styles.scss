@@ -1,1 +1,18 @@
+@import "./assets/base/variables";
+
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    
+        background: $gray;
+    
+}
+p {
+    font-size: 16px;
+}
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}

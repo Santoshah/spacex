@@ -1,0 +1,34 @@
+@import "../../assets/base/variables";
+
+.spacex_card {
+    
+    
+
+    img {
+        max-width: 100%;
+    }
+}
+
+h3 {
+    color: #474e96;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.spacex_card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    height: 100%;
+
+    .mission_photo {
+        background: darken($gray, 10%);
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+}
