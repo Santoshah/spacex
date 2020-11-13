@@ -16,7 +16,7 @@
     background: #fff;
     padding: 15px;
 }
-.col-md-9 {
+.spacex_data_wrapper {
     flex: 1;
     margin-left: 20px;
 }
@@ -26,8 +26,8 @@
     justify-content: flex-start;
 
     .spacex-card {
-        flex: 0 0 232px;
-        max-width: 232px;
+        flex: 0 0 25%;
+        max-width: 299px;
         margin-bottom: 20px;
         margin-right: 12px;
 
