@@ -4,13 +4,19 @@
         <app-menu></app-menu>
       </div>
       <div class="spacex_data_wrapper">
-        <div class="spacex_flex">
-          <app-spacex-card class="spacex-card" 
-              *ngFor="let item of spaceXData" 
-              [spaceX]="item"
-              (getLandFilterVariable)="getLandFilter($event)"
-              ></app-spacex-card>
+        <div class="spacex_flex" *ngIf="spaceXData['length'] > 0; else noData">
+          
+          <div *ngIf="loading" class="loader make_center">loading</div>
+          <ng-container *ngIf="loading==false">
+            <app-spacex-card class="spacex-card" 
+                *ngFor="let item of spaceXData" 
+                [spaceX]="item"
+                (getLandFilterVariable)="getLandFilter($event)"
+                ></app-spacex-card>
+          </ng-container>
+          
         </div>
+        <ng-template #noData><div class="make_center">No data available</div></ng-template>
       </div>
     </div>
   

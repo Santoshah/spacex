@@ -45,8 +45,8 @@ export class MenuComponent implements OnInit {
     // console.log({land}); 
     if(this.previous_successLand == land) {
       // toggle logic
-      console.log("prev and current launch, both are same");
-      this.launch_success = "all"
+      console.log("prev and current land, both are same");
+      this.successLand = "all"
       this.previous_successLand = "all";
       this.routeOnToggle();
     } else {

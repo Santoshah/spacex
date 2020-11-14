@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
   successLaunch : any = "";
   successLand : any = "";
   storageData : any;
+  loading : boolean = false;
   constructor(
     private _spaceX : SpacexAPIService,
     private _activateRoute:ActivatedRoute,
@@ -33,8 +34,6 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit(){
-
-
    this.yearFilter == "" || this.yearFilter == undefined ? this.getSpaceXData() : '';
   }
 
@@ -43,9 +42,12 @@ export class DashboardComponent implements OnInit {
 
   }
   getSpaceXData(){
+    this.loading = true;
     this._spaceX.getSpaceXData(this.yearFilter, this.successLaunch, this.successLand).subscribe(allData=>{
+      this.loading = false;
       console.log(allData[0]);
       this.spaceXData = allData;
+
     })
   }
 }
