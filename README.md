@@ -2,13 +2,26 @@
 
 [spaceX demo heroku](https://spacexng.herokuapp.com)
 
-## Development server
+## Heroku deployment
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Any commit on this repo will reflect on the `spaceX demo heroku` url.
 
-## Code scaffolding
+## Code explanation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   Components classified. I have created 3 different component. Dashboard, Menu and spacex-card.
+    
+   # Dashboard : 
+       It is the main layout connecting menu and results.
+       
+   # Menu : 
+       Its is responsible for sidebar menus like list of year from 2006 to 2020. Those years data are static and coming from an array. Launch Success and Successfull landing is static.
+       
+       
+    # Menu : # spacex-card
+    
+       
+      
+       
 
 ## Build
 
