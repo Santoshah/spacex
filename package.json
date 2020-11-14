@@ -9,10 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run spaceX:serve-ssr",
-    "serve:ssr": "node dist/spaceX/server/main.js",
-    "build:ssr": "ng build --prod && ng run spaceX:server:production",
-    "prerender": "ng run spaceX:prerender"
+    "dev:ssr": "ng run space-x:serve-ssr",
+    "serve:ssr": "node dist/space-x/server/main.js",
+    "build:ssr": "ng build --prod && ng run space-x:server:production",
+    "prerender": "ng run space-x:prerender"
   },
   "engines": {
     "node": "12.18.2",
