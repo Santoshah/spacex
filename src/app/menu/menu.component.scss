@@ -10,7 +10,7 @@
         border-radius: 5px;
         text-decoration: none;
 
-        &:focus, &:hover, &.active {
+        &:hover, &.active {
             background: $dark-green;
         }
     }
