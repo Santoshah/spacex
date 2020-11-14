@@ -9,13 +9,13 @@ Any commit on this repo will reflect on the `spaceX demo heroku` url.
 ## Code explanation
 Components classified. I have created 3 different component. Dashboard, Menu and spacex-card.
     
-# Dashboard : 
+Dashboard : 
 It is the main layout connecting menu and results.
        
-# Menu : 
+Menu : 
 Its is responsible for sidebar menus like list of year from 2006 to 2020. Those years data are static and coming from an array. Launch Success and Successfull landing is static.
 
-# spacex-card
+spacex-card
 This component is for the single card layout. I am looping the entire spacex-card to generate list of results.
 
 # Code Logic explanation.
