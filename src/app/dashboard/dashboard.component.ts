@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { SpacexAPIService } from '../spacex-api.service';
 
@@ -9,9 +9,6 @@ import { SpacexAPIService } from '../spacex-api.service';
 })
 export class DashboardComponent implements OnInit {
 
-  @Output("getLandFilterVariable") getLandFilterVariable : boolean;
-  @Output("getLaunchFilterVariable") getLaunchFilterVariable : boolean;
-  @Output("getYearFilterVariable") getYearFilterVariable : number;
   title = 'spaceX';
   spaceXData : any = [];
   yearFilter : any = "";
@@ -25,7 +22,6 @@ export class DashboardComponent implements OnInit {
 
   ){
     this._activateRoute.params.subscribe(params=> {
-      console.log(params);
       this.yearFilter = params['yearFilter'];
       this.successLaunch = params['successLaunch'];
       this.successLand = params['successLand'];

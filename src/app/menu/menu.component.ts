@@ -24,7 +24,6 @@ export class MenuComponent implements OnInit {
     
   ) {
     this._activateRoute.params.subscribe(params=> {
-      console.log(params);
       if(params) {
         this.yearData = params['yearFilter'] == undefined ? "all" : params['yearFilter'] ;
         this.previousYear = params['yearFilter'] == undefined ? "all" : params['yearFilter'] ;
