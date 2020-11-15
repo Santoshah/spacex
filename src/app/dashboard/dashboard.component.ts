@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   @Output("getLaunchFilterVariable") getLaunchFilterVariable : boolean;
   @Output("getYearFilterVariable") getYearFilterVariable : number;
   title = 'spaceX';
-  spaceXData : any;
+  spaceXData : any = [];
   yearFilter : any = "";
   successLaunch : any = "";
   successLand : any = "";
