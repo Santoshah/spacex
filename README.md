@@ -34,8 +34,11 @@ URL format for filter: `https://spacexng.herokuapp.com/2010/1/all`
 
 Route params 
  1st = launch Date (by default its all*)
+
  2nd = launch success (by default its all*)
- 3rs = land success (by default its all*)
+
+ 3rs = land success (by default its all*) land success filter is depend on launch success. if land success filter is applied the launch success will automatically be true.
+ 
  
  *all means the particular query params is not passed in API call.
 
