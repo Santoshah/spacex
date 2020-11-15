@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SpacexCardComponent } from './spacex-card/spacex-card.component';
-import { DashboardComponent } from './dashboard/dashboard.component'; 
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { FooterComponent } from './footer/footer.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     SpacexCardComponent,
-    DashboardComponent
+    DashboardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
