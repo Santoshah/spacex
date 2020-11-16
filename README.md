@@ -58,6 +58,6 @@ The app is responsive using custom media query. Instead of mobile first I used i
 
 
 # SSR
-I have setup SSR in this project.
+I have setup SSR in this project. Working fine in my local but unable to make it work on heroku
 
 
