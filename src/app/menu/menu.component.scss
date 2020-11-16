@@ -10,12 +10,12 @@
         border-radius: 5px;
         text-decoration: none;
 
+        &:link {
+            background: $green;
+        }
         
         &:hover, &.active {
             background: $dark-green;
-        }
-        &:link {
-            background: $green;
         }
         
     }
