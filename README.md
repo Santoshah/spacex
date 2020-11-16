@@ -58,6 +58,6 @@ The app is responsive using custom media query. Instead of mobile first I used i
 
 
 # SSR
-I have setup SSR in this project and tested locally with `npm run serve:ssr` this command which is working fine. I could see data when I do view source also I see many warning and unsual error code so I do not use it during build.
+I have setup SSR in this project.
 
 
