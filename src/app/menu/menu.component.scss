@@ -9,10 +9,6 @@
         line-height: 1.24;
         border-radius: 5px;
         text-decoration: none;
-
-        &:link {
-            background: $green;
-        }
         
         &:hover, &.active {
             background: $dark-green;
