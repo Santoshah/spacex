@@ -7,7 +7,7 @@
 Any commit on this repo will reflect on the `spaceX demo heroku` url.
 
 ## Code explanation
-Components classified. I have created 3 different component. Dashboard, Menu and spacex-card.
+Components classified. I have created 4 different component. Dashboard, Menu, footer and spacex-card.
     
 Dashboard : 
 It is the main layout connecting menu and results.
@@ -17,6 +17,9 @@ Its is responsible for sidebar menus like list of year from 2006 to 2020. Those 
 
 spacex-card
 This component is for the single card layout. I am looping the entire spacex-card to generate list of results.
+
+Footer
+This component defined who develops this application.
 
 # Code Logic explanation.
 
@@ -34,8 +37,11 @@ URL format for filter: `https://spacexng.herokuapp.com/2010/1/all`
 
 Route params 
  1st = launch Date (by default its all*)
+
  2nd = launch success (by default its all*)
- 3rs = land success (by default its all*)
+
+ 3rs = land success (by default its all*) land success filter is depend on launch success. if land success filter is applied the launch success will automatically be true.
+ 
  
  *all means the particular query params is not passed in API call.
 
