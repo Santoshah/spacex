@@ -70,20 +70,25 @@
 }
 
 @media (max-width: 700px) {
+    
     .menu_wrapper {
         flex: 0 0 100%;
-        max-width: 300px;
+        max-width: 320px;
         margin: 0 0 20px;
     }
     .row {
         flex-direction: column;
         align-items: center;
     }
-    .spacex_flex {
+    .spacex_data_wrapper {
+        margin-left: 0;
+    }
+    .spacex_flex {     justify-content: center;
         .spacex-card {
             flex: 0 0 100%;
-            max-width: 300px;
-            &:nth-child(2n) { margin-right: 12px; }
+            max-width: 320px;
+            &:nth-child(2n) { margin-right: 0; }
+            margin-right: 0;
         }
     }
 }
